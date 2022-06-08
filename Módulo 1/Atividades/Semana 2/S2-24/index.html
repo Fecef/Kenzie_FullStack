@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atividade- CSS: Página Blog - Flexbox</title>
-    <meta name="description" content="CSS: Página Blog" />
-    <link rel="stylesheet" href="_css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="https://kenzie.com.br/favicon.jpeg"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-      
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade- CSS: Página Blog - Flexbox</title>
+  <meta name="description" content="CSS: Página Blog">
+  <link rel="stylesheet" href="_css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">See News</h1>
+    </div>
+  </header>
+
+  <main class="main container">
+
+    <div class="news-wrapper">
+      <div class="news-card">
+        <figure>
+          <img class="card-thumbnail" src="_img/img1.jpg" alt="Tela com códigos.">
+          <figcaption><a class="card-link" href="#">Como utilizar o CSS da melhor forma em 2021</a></figcaption>
+        </figure>
+
+        <small class="card-summary">Aprenda a utilizar as melhores ténicas de css e criar interfaces
+          consistentes.</small>
+
+        <div>
+          <span class="card-tag">Entreterimento</span>
+          <span class="card-tag">Curiosidades</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="aside-wrapper">
+      <div>
+        <h2>Recent Posts</h2>
+
+        <div>
+          <figure>
+            <img src="_img/img1.jpg" alt="Recent 1">
+            <figcaption>Como manter a consistência nos estudos</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div>
+        <h2>Popular Posts</h2>
+
+        <figure>
+          <img src="_img/img1.jpg" alt="Popular 1">
+          <figcaption>Banco de imagens gratuitos para utilizar em seus projet...</figcaption>
+        </figure>
+      </div>
+    </div>
+  </main>
+
+
+</body>
+
 </html>
