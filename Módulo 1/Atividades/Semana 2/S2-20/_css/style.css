@@ -1,0 +1,41 @@
+#ex1 li {
+  display: inline;
+  border-bottom: medium double #000;
+  box-shadow: 5px 5px 10px #000;
+  font-size: 3em;
+}
+
+#ex2 nav {
+}
+
+#ex2 ul {
+  padding: 10px;
+}
+
+#ex2 li {
+  list-style: none;
+}
+
+#ex2 a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #308ebd;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+#ex3 nav {
+  width: 710px;
+}
+
+#ex3 a {
+  text-decoration: none;
+  color: #308ebd;
+  border-bottom: 2px solid #308ebd;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  display: block;
+}
