@@ -1,10 +1,10 @@
-# Kenzie-FullStack
+# Kenzie Academy: Desenvolvedor Web FullStack (2022)
 
-Repositório com todas as atividades realizadas na Kenzie Academy.
+Todas as atividades realizadas na Kenzie Academy.
 
 **Duração: 12 meses**
 
-<h2>Módulo 1</h2>
+<h2>Módulo 1 ✔️</h2>
 
 <ul>
   <li>HTML5 e CSS3</li>
@@ -15,7 +15,7 @@ Repositório com todas as atividades realizadas na Kenzie Academy.
 </ul>
 
 
-<h2>Módulo 2</h2>
+<h2>Módulo 2 ❌</h2>
 
 <ul>
   <li>JavaScript(ES6)</li>
@@ -27,7 +27,7 @@ Repositório com todas as atividades realizadas na Kenzie Academy.
 </ul>
 
 
-<h2>Módulo 3</h2>
+<h2>Módulo 3 ❌</h2>
 
 <ul>
   <li>React</li>
@@ -39,7 +39,7 @@ Repositório com todas as atividades realizadas na Kenzie Academy.
   <li>Metodologias Ágeis</li>
 </ul>
 
-<h2>Módulo 4</h2>
+<h2>Módulo 4 ❌</h2>
 
 <ul>
   <li>NodeJs, Express</li>
@@ -50,7 +50,7 @@ Repositório com todas as atividades realizadas na Kenzie Academy.
   <li>Metodologias Ágeis</li>
 </ul>
 
-<h2>Módulo 5</h2>
+<h2>Módulo 5 ❌</h2>
 
 <ul>
   <li>Python</li>
@@ -63,7 +63,7 @@ Repositório com todas as atividades realizadas na Kenzie Academy.
 </ul>
 
 
-<h2>Módulo 6</h2>
+<h2>Módulo 6 ❌</h2>
 
 <ul>
   <li>Trilha de Empregabilidade</li>
