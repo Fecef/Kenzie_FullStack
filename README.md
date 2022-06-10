@@ -2,59 +2,73 @@
 
 Repositório com todas as atividades realizadas na Kenzie Academy.
 
-Módulo 1
+**Duração: 12 meses**
 
-HTML5 e CSS3
-Web Semântica
-JavaScript(ES6)
-Lógica de Programação
-Contrle de Versão GIT
--------------------------------------------------------------------------------------------------------------------------------------------------------------
+<h2>Módulo 1</h2>
 
-Módulo 2
+<ul>
+  <li>HTML5 e CSS3</li>
+  <li>Web Semântica</li>
+  <li>JavaScript(ES6)</li>
+  <li>Lógica de Programação</li>
+  <li>Contrle de Versão GIT</li>
+</ul>
 
-JavaScript(ES6)
-Programação Orientada a Objetos
-Programação Funcional
-Metodologias Ágeis
-Qualidade
-TDD com Jest, BDD com Cucumber
-Noções de UX
--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Módulo 3
+<h2>Módulo 2</h2>
 
-React
-Hooks
-State Management
-Redux
-Componentização: Uso de bibliotecas de componentes
-Consumo de API's
-Metodologias Ágeis
--------------------------------------------------------------------------------------------------------------------------------------------------------------
+<ul>
+  <li>JavaScript(ES6)</li>
+  <li>Programação Orientada a Objetos</li>
+  <li>Programação Funcional</li>
+  <li>Metodologias Ágeis</li>
+  <li>Qualidade TDD com Jest, BDD com Cucumber</li>
+  <li>Noções de UX</li>
+</ul>
 
-Módulo 4
 
-NodeJs, Express
-TypeScript
-Banco de Dados sQL (PostgreSQL)
-Construção de API's RESTful
-Programação Assíncrona
-Metodologias Ágeis
--------------------------------------------------------------------------------------------------------------------------------------------------------------
+<h2>Módulo 3</h2>
 
-Módulo 5
+<ul>
+  <li>React</li>
+  <li>Hooks</li>
+  <li>State Management</li>
+  <li>Redux</li>
+  <li>Componentização: Uso de bibliotecas de componentes</li>
+  <li>Consumo de API's</li>
+  <li>Metodologias Ágeis</li>
+</ul>
 
-Pytho
-Django
-ORM
-MongoDB
-Amazon AWS
-Migrations
-Metodologias Ágeis
--------------------------------------------------------------------------------------------------------------------------------------------------------------
+<h2>Módulo 4</h2>
 
-Módulo 6
-Trilha de Empregabilidade
-                                                                 
-FIM
+<ul>
+  <li>NodeJs, Express</li>
+  <li>TypeScript</li>
+  <li>Banco de Dados SQL (PostgreSQL)</li>
+  <li>Construção de API's RESTful</li>
+  <li>Programação Assíncrona</li>
+  <li>Metodologias Ágeis</li>
+</ul>
+
+<h2>Módulo 5</h2>
+
+<ul>
+  <li>Python</li>
+  <li>Django</li>
+  <li>ORM</li>
+  <li>MongoDB</li>
+  <li>Amazon AWS</li>
+  <li>Migrations</li>
+  <li>Metodologias Ágeis</li>
+</ul>
+
+
+<h2>Módulo 6</h2>
+
+<ul>
+  <li>Trilha de Empregabilidade</li>
+</ul>
+
+<br><br>
+
+<p align="center">FIM 🏆</p>
