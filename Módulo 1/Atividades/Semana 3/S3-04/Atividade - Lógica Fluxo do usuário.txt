@@ -1,0 +1,20 @@
+
+1) Acessar página inicial do website
+        se acesso negado, enviar mensagem
+2) Realizar cadastro
+        se email já utilizado, enviar mensagem e impedir acesso
+3) Acessar aba de celulares
+4) Procurar produto
+5) Clicar no produto
+        se produto indisponível, impedir acesso
+6) Acessar página com detalhes
+7) Clicar no botão inserir no carrinho de compras
+8) Clicar na aba carrinho de compras
+9) Clicar no botão finalizar compras
+10) Selecionar o método de pagamento (neste exemplo, por cartão de crédito)
+        caso nenhum método seja selecionado, enviar mensagem e impedir prosseguimento
+11) Inserir os dados do cartão de crédito
+        se dados incorrentos, enviar mensagem
+12) Cadastrar o cartão no site
+13) Clicar no botão para concluir a compra
+14) Checar o email para validar se a compra foi realizada
