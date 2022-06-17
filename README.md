@@ -6,6 +6,8 @@ Todas as atividades realizadas na Kenzie Academy.
 
 <h2>Módulo 1 ✔️</h2>
 
+- [ ] teste
+
 <ul>
   <li>HTML5 e CSS3</li>
   <li>Web Semântica</li>
