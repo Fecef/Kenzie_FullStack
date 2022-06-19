@@ -1,0 +1,136 @@
+/*
+----------------------------------------------------------
+ESTRUTURAÇÃO BASE
+----------------------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** ESTILOS GERAIS
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_accent-color
+*/
+
+/* DECLARAÇÃO DE VARIÁVEIS */
+/* ESTILOS GERAIS*/
+body,
+figure {
+  margin: 0;
+  padding: 0;
+  background-color: #121214;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 40px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+/* FOOTER */
+/* PÁGINA INICIAL */
+.logo {
+  object-fit: scale-down;
+}
+.who-is-watching {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 700px;
+  gap: 17px;
+}
+
+.card-wrapper .card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  gap: 15px;
+}
+
+.card-wrapper .card > div {
+  transition-duration: 0.7s;
+}
+
+.card-wrapper .card:hover > div {
+  border-color: #fff;
+}
+
+.card-wrapper .card .material-symbols-outlined {
+  font-size: 70px;
+  transition-duration: 0.7s;
+  color: #9c9c9c;
+}
+
+.card-wrapper .card:hover .material-symbols-outlined {
+  color: #fff;
+}
+
+.card-wrapper .card > span {
+  color: #9c9c9c;
+  font-weight: 600;
+  font-size: 14px;
+  transition-duration: 0.7s;
+}
+
+.card-wrapper .card:hover > span {
+  color: #fff;
+}
+
+.card-wrapper .card .card-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e20;
+  border: 1.5px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 160px;
+}
+
+.card-wrapper .card .card-avatar > img {
+  width: 160px;
+  object-fit: cover;
+}
+
+.perfil-switch__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121214;
+  border: 1.5px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 70px;
+  width: 206px;
+  height: 50px;
+  transition-duration: 0.7s;
+  text-decoration: none;
+}
+
+.perfil-switch__link:hover {
+  color: #000;
+  background-color: #fff;
+}
+/* EXTRAS */
+/* @MEDIA */
