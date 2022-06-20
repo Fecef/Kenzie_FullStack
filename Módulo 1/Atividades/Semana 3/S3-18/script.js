@@ -1,5 +1,5 @@
-let quantidadeRefrigerante = parseInt(prompt("Digite a quantidade de itens:"));
 let precoRefrigerante = parseFloat(prompt("Digite o valor do refrigerante:"));
+let quantidadeRefrigerante = parseInt(prompt("Digite a quantidade de itens:"));
 const refrigerante = precoRefrigerante * quantidadeRefrigerante;
 
 let precoMacarrao = parseFloat(prompt("Digite o valor do macarrão:"));
@@ -22,7 +22,9 @@ let precoVinho = parseFloat(prompt("Digite o valor do vinho:"));
 let quantidadeVinho = parseInt(prompt("Digite a quantidade de itens:"));
 const vinho = precoVinho * quantidadeVinho;
 
-let total = refrigerante + macarrao + ervilha + arroz + feijao + vinho;
+const total = refrigerante + macarrao + ervilha + arroz + feijao + vinho;
+
+console.log(total);
 
 if (total % 2 == 0) {
     alert(`Valor total a ser pago: R$ ${total - vinho}`);
