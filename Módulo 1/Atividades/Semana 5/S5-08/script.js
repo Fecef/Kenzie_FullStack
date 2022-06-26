@@ -9,7 +9,7 @@ function multiply(num1, num2) {
   let total = 0;
 
   for (let i = 0; i < num2; i++) {
-    total += add(num1, 0);
+    total = add(num1, total);
   }
   return total;
 }
@@ -20,7 +20,7 @@ function power(x, n) {
   let total = 1;
 
   for (let i = 0; i < n; i++) {
-    total *= multiply(x, 1);
+    total = multiply(x, total);
   }
   return total;
 }
