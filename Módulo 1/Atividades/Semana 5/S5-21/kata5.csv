@@ -1,0 +1,6 @@
+i;i >= -25;i % 3 == 0;console;i--
+25;true;true;25;24
+24;true;false;-;23
+23;true;true;23;22
+22;true;false;-;21
+21;true;true;21;20

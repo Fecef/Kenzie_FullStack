@@ -1,10 +1,13 @@
-// Soma
+// ADD
 function add(num1, num2) {
   return num1 + num2;
 }
-console.log(add(2, 4));
+console.assert(
+  add(3, 5) == 8,
+  "A função add não está funcionando como esperado"
+);
 
-// Multiplicação
+// MULTIPLY
 function multiply(num1, num2) {
   let total = 0;
 
@@ -13,9 +16,12 @@ function multiply(num1, num2) {
   }
   return total;
 }
-console.log(multiply(6, 8));
+console.assert(
+  multiply(4, 6) === 24,
+  "A função multiply não está funcionando como esperado"
+);
 
-// Potência
+// POWER
 function power(x, n) {
   let total = 1;
 
@@ -24,18 +30,28 @@ function power(x, n) {
   }
   return total;
 }
-console.log(power(2, 8));
+console.assert(
+  power(3, 4) === 81,
+  "A função power não está funcionando como esperado"
+);
 
-// Fatorial
+// FACTORIAL
 function factorial(x) {
   for (let i = x - 1; i > 0; i--) {
     x = multiply(x, i);
   }
   return x;
 }
-console.log(factorial(9));
+console.assert(
+  factorial(5) === 120,
+  "A função factorial não está funcionando como esperado"
+);
 
-// Fibonacci
+/**
+ * BONUS (aviso: o grau de dificuldade é bem maior !!!)
+ */
+
+// FIBONACCI
 function fibonacci(n) {
   let num1 = 1;
   let num2 = 0;
@@ -48,4 +64,7 @@ function fibonacci(n) {
   }
   return aux;
 }
-console.log(fibonacci(8));
+console.assert(
+  fibonacci(7) === 13,
+  "A função fibonacci não está funcionando como esperado"
+);
