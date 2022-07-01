@@ -16,4 +16,4 @@ function comprandoItens(categoria) {
   }
   return nome;
 }
-comprandoItens("Hiegene");
+comprandoItens("Higiene");
