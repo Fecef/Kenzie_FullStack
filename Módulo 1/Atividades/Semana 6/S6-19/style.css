@@ -89,14 +89,9 @@ body {
   border-radius: 15px;
   overflow: hidden;
 }
-.card > div {
+.card .card__img {
   width: 100%;
   height: 50%;
-  overflow: hidden;
-}
-.card > div .card__img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 .card .card__title {
