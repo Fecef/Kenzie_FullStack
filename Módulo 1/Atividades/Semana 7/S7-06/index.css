@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*
+----------------------------------------------------------
+ESTRUTURAÇÃO BASE
+----------------------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** ESTILOS GERAIS
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_accent-color
+*/
+
+/* DECLARAÇÃO DE VARIÁVEIS */
+/* ESTILOS GERAIS*/
+:root {
+  font-size: 62.5%;
+}
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #f3f3f3;
+  font-family: "Roboto", sans-serif;
+}
+.search-bar__input,
+.chore-add__input,
+.chore-list__item {
+  border: none;
+  outline: none;
+  background-color: #f3f3f3;
+  color: #adadad;
+  border-radius: 5px;
+  height: 50px;
+  width: 420px;
+  padding: 0 15px;
+}
+/* HEADER */
+.header {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.nav__logo {
+  color: #027bce;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+.fa-magnifying-glass {
+  color: #adadad;
+  transform: translateX(-35px);
+}
+/* FOOTER */
+/* PÁGINA INICIAL */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 50px 0;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  gap: 35px;
+}
+.chore-add__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+}
+.chore-add__btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  background-color: #027bce;
+  color: #fff;
+  transition-duration: 0.2s;
+}
+.chore-add__btn:hover {
+  background-color: #164463;
+}
+.chore-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.chore-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #000;
+  width: 100%;
+  font-size: 1.4rem;
+  padding-left: 50px;
+  gap: 20px;
+}
+.fa-circle {
+  position: absolute;
+  color: #15e226;
+  left: 20px;
+}
+.fa-trash {
+  margin-left: auto;
+  color: #adadad;
+}
+/* EXTRAS */
+.container {
+  max-width: 997px;
+  margin: 0 auto;
+}
+/* @MEDIA */
