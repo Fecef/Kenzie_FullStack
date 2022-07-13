@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-Edge">
@@ -12,8 +13,67 @@
     <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
     <!-- Script -->
     <script defer src="script.js"></script>
+    <script defer src="https://kit.fontawesome.com/708e3f4fc9.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <header class="header">
+        <nav class="nav container">
+            <a class="nav__logo" href="index.html"><strong>MY TASK'S</strong></a>
+
+            <div>
+                <label for="searchBar" hidden>Search</label>
+                <input class="search-bar__input" type="search" name="searchBar" id="searchBar"
+                    placeholder="Pesquisar tarefa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main container">
+        <section class="section">
+            <h2>Inserir Tarefa</h2>
+
+            <form class="chore-add__form">
+                <label for="tituloTarefa" hidden>Titulo da Tarefa</label>
+                <input class="chore-add__input" type="text" name="tituloTarefa" id="tituloTarefa"
+                    placeholder="Digitar tiulo da tarefa" required>
+
+                <label for="tipoTarefa" hidden>Tipo da Tarefa</label>
+                <select name="tipoTarefa" id="tipoTarefa" class="chore-add__input" required>
+                    <option value="" selected hidden>Tipo de Tarefa</option>
+                    <option value="Urgente">Urgente</option>
+                    <option value="Prioritário">Prioritário</option>
+                    <option value="Normal">Normal</option>
+                </select>
+
+                <button class="chore-add__btn">Adicionar Tarefa na Lista</button>
+            </form>
+        </section>
+
+        <section class="section">
+            <h2>Tarefas</h2>
+
+            <menu id="chore-list" class="chore-list">
+                <!-- <li class="chore-list__item">Lavar a louça
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </li>
+                <li class="chore-list__item">Ir caminhar pela manhã
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </li>
+                <li class="chore-list__item">Depositar dinheiro do aluguel
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </li>
+                <li class="chore-list__item">Paga conta de luz
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </li> -->
+            </menu>
+        </section>
+    </main>
 </body>
+
 </html>
