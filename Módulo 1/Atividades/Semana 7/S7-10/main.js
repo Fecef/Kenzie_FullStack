@@ -3,33 +3,14 @@ const input = document.getElementById("input");
 const addButton = document.getElementById("add");
 const resetButton = document.getElementById("reset");
 
-let list = [
-  {
-    id: 10,
-    nome: "Papel",
-  },
-  {
-    id: 11,
-    nome: "Toalha",
-  },
-  {
-    id: 12,
-    nome: "Pano",
-  },
-  {
-    id: 13,
-    nome: "Prato",
-  },
-];
+let list = [];
 
 function reloadList() {
   shoppingList.innerHTML = ""; // Limpa nosso Elemento HTML
   for (let index = 0; index < list.length; index++) {
-    let li = document.createElement("li");
-    li.innerText = list[index].nome;
     let currentElement = list[index];
     currentElement.id = index;
-    shoppingList.appendChild(li);
+    shoppingList.appendChild(currentElement);
   }
 }
 
