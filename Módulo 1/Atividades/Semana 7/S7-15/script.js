@@ -25,13 +25,6 @@ let tasks = [
   },
 ];
 
-let sstask = [
-  {
-    titulo: "Comprar comida para o gato",
-    tipo: "Urgente",
-  },
-];
-
 function listTasks(list) {
   let menu = document.getElementById("chore-list");
   // Reset lista.
@@ -53,6 +46,7 @@ function listTasks(list) {
 
     setPriorityColor(list, index, circleIcon);
   }
+  return list;
 }
 listTasks(tasks);
 
@@ -134,3 +128,17 @@ searchTask(tasks);
 function normalizedValue(event) {
   return event.target.value.replace(/\s/g, "").toLowerCase();
 }
+
+function removerTarefa() {
+  let menu = document.querySelector("#chore-list");
+  let trashIcon = document.querySelectorAll(".fa-trash");
+
+  menu.addEventListener("click", function (event) {
+    for (let i = 0; i < trashIcon.length; i++) {
+      if (trashIcon[i] === event.target) {
+        trashIcon[i].parentElement.remove();
+      }
+    }
+  });
+}
+removerTarefa(tasks);
