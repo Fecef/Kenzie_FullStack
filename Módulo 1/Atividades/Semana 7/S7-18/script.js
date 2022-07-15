@@ -4,9 +4,11 @@ function rollingDices() {
   let count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
   for (let i = 0; i < 1000; i++) {
-    let rollOfDice = Math.ceil(Math.random() * 12);
+    let rollOfDice = Math.ceil(Math.random() * 11) + 1;
+    console.log(rollOfDice);
     count[rollOfDice - 2] += 1;
   }
+  console.log(count);
   buildHTML(count);
 }
 
@@ -22,3 +24,5 @@ function buildHTML(arr) {
     );
   }
 }
+
+rollingDices();
