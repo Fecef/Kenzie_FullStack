@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Implementando Layout">
+    <title>Capstone: E-commerce - Parte1</title>
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Folha de Estilo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts: Inter Regular 400 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- Fonts Aweome -->
+    <script src="https://kit.fontawesome.com/bc808a73fe.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+    <!-- Script -->
+    <script src="js/database.js"></script>
+    <script defer src="js/index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content container">
+            <h1><a class="header-content__logo" href="index.html">Weartake</a></h1>
+
+            <menu class="header-content-navbar">
+                <li><a href="#">Todos</a></li>
+                <li><a href="#">Acessórios</a></li>
+                <li><a href="#">Calçados</a></li>
+                <li><a href="#">Camisetas</a></li>
+            </menu>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="w-75"">
+            <!-- Card Wrapper -->
+            <menu class=" card-wrapper">
+            <!-- <li class="card">
+                    <div class="card-background-img">
+                        <img src="img/camiseta_preta.svg" alt="Camiseta Preto">
+                    </div>
+                    <div class="card-description">
+                        <p class="card-description__category">Camisetas</p>
+                        <h2 class="card-description__title">Camiseta Preta</h2>
+                        <p class="card-description__detail">Adicione um pouco de energia ao seu guarda-roupa de inverno com
+                            esta jaqueta
+                            vibrante...</p>
+                        <p class="card-description__price">R$ 100,00</p>
+                        <button class="card-description__btn">Adicionar ao carrinho</button>
+                    </div>
+                </li> -->
+            </menu>
+
+            <section class="warning hidden">
+                <i class="fa-solid fa-face-grin-beam-sweat"></i>
+                <p class="warning__msg">Ooops... Nenhum produto foi encontrado.</p>
+                <p class="warning__msg">Quem sabe amanhã?</p>
+            </section>
+        </div>
+
+        <section class="side-content">
+            <form class="search-bar">
+                <input type="search" name="search" id="search" placeholder="Digite aqui sua pesquisa"
+                    autocomplete="off">
+                <label for="search" hidden>Pesquisar</label>
+                <button>Pesquisar</button>
+            </form>
+
+            <section>
+                <h2 class="shopping-cart__title">Carrinho de compras</h2>
+
+                <section class="shopping-cart">
+                    <div class="shopping-cart-default">
+                        <p>Carrinho vazio</p>
+                        <p>Adicione items</p>
+                    </div>
+                    <!-- Shopping Cart -->
+                    <menu class="shopping-cart-content">
+                        <!-- <li class="shopping-cart-content-card">
+                            <img src="img/camiseta_preta.svg" alt="Camiseta Preto">
+                            <div class="shopping-cart-content-card-details">
+                                <p class="shopping-cart-content-card-details__title">Lightweight Jacket</p>
+                                <p class="shopping-cart-content-card-details__price">R$ 100,00</p>
+                                <button class="shopping-cart-content-card-details__btn">Remover produto</button>
+                            </div>
+                        </li> -->
+                    </menu>
+                </section>
+
+                <section>
+                    <table class="shopping-cart-footer">
+                        <!-- <tr>
+                            <th>Quantidade:</th>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th>Total:</th>
+                            <td>R$ 200,00</td>
+                        </tr> -->
+                    </table>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
