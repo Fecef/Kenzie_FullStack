@@ -1,0 +1,13 @@
+GET https://www.w3.org/People/Berners-Lee/
+###
+GET  https://rickandmortyapi.com/api/character/2
+###
+GET https://rickandmortyapi.com/api/location/15
+###
+GET https://rickandmortyapi.com/api/episode/1
+###
+GET https://pokeapi.co/api/v2/type/grass
+###
+GET https://db.ygoprodeck.com/api/v7/cardinfo.php?id=30
+###
+GET https://zoo-animal-api.herokuapp.com/animals/rand/5
