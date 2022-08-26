@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styleBase.css">
+    <title>Entrega Lista de Clientes</title>
+    <script defer type="module" src="../js/cadastrar.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="../../index.html">Listar Clientes</a></li>
+            <li><a href=>Criar Clientes</a></li>
+            <li><a href="./editar.html">Editar Clientes</a></li>
+            <li><a href="./deletar.html">Deletar Clientes</a></li>
+        </ul>
+    </header>
+
+
+    <form>
+        <h2>Cadastre um cliente</h2>
+
+        <h3>Dados pessoais</h3>
+
+        <input type="text" name="nome" placeholder="digite seu nome" value="Girafales" required />
+
+        <input type="text" name="email" placeholder="digite sua email" value="girafa@gmail.com" required />
+
+        <input type="number" name="idade" placeholder="digite sua idade" value="52" required />
+
+        <input type="text" name="cpf" placeholder="digite seu cpf" value="13222678150" maxlength="11" required />
+
+        <input type="text" name="sexo" placeholder="digite seu sexo" value="Masculino" required />
+
+
+        <h3>Endereço</h3>
+
+        <input type="number" name="cep" placeholder="digite seu cep" value="08747005" required />
+
+        <input type="text" name="rua" placeholder="digite sua rua" value="Mistério" required />
+
+        <input type="number" name="numero" placeholder="digite o numero" value="2000" required />
+
+        <input type="text" name="bairro" placeholder="digite seu bairro" value="Matheus" required />
+
+        <input type="text" name="cidade" placeholder="digite sua cidade" value="é" required />
+        
+        <input type="text" name="estado" placeholder="digite seu estado" value="o Cara" required />
+
+
+        <button id="submit">Cadastrar</button>
+    </form>
+</body>
+
+</html>
