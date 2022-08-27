@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomePage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/reset.css" />
+  <link rel="stylesheet" href="../styles/homepage.css" />
+  <script defer type="module" src="../script/homepage.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="header">
+      <!-- <figure>
+        <img src="../assets/image 4.png" alt="gatinho" />
+      </figure>
+      <h2>Gatinho...</h2> -->
+    </div>
+    <button id="logout">Logout</button>
+  </header>
+  <main>
+    <form class="criarpost" id="criarpost_form">
+      <textarea name="comment" id="comment" placeholder="No que está pensando?" maxlength="400"></textarea>
+      <button type="submit">+</button>
+    </form>
+    <ul id="tag-ul">
+      <!-- <li class="card">
+        <div class="card_detalhes">
+          <figure>
+            <img src="../assets/image 4.png" alt="" />
+            <figcaption class="name">Gatinho Fofo</figcaption>
+          </figure>
+          <div class="texto">
+            <h2>Gatinho Fofo</h2>
+            <p>
+              Lorem ipsum dolor sit amet. Et iste labore ut similique
+              consequuntur et consequuntur harum est repellendus quia 33
+              tprehenderit vero eos maxime consequatur
+            </p>
+          </div>
+        </div>
+        <div class="card_botoes">
+          <p>22/08/2022</p>
+          <div>
+            <button id="btn_editar">
+              <img src="../assets/edit 1.png" alt="editar" />
+            </button>
+            <button id="btn_deletar">
+              <img src="../assets/trash-bin 1.png" alt="deletar" />
+            </button>
+          </div>
+        </div>
+      </li> -->
+      <div class="modal-background">
+        <div class="modal_editar" id="modal-editar">
+          <h2>Editar</h2>
+          <form id="modal-editar">
+            <textarea type="text" name="texto" id="texto" placeholder="Estou mudando meu comentario."></textarea>
+            <div>
+              <button class="btn_enviar" type="submit">Enviar</button>
+              <button id="fechar">Voltar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal-background">
+        <div class="modal_deletar" id="modal-deletar">
+          <div>
+            <h2>Deseja deletar esse poster?</h2>
+            <div>
+              <button type="submit" class="btn_deletar">Deletar</button>
+              <button id="fecharModal2">Voltar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </ul>
+  </main>
+</body>
+
+</html>

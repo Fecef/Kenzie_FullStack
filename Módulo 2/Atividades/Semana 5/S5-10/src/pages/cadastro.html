@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../styles/reset.css" />
+  <link rel="stylesheet" href="../styles/cadastro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <script defer type="module" src="../script/cadastro.js"></script>
+</head>
+
+<body>
+  <main>
+    <form id="form_cadastrar">
+      <h1>Cadastro</h1>
+
+      <input type="text" name="nome" id="nome" placeholder="Nome do usuário" autocomplete="off" required />
+      <input type="text" name="email" id="email" placeholder="Email" autocomplete="off" required />
+      <input type="text" name="imagem" id="imagem" placeholder="Foto de Perfil" autocomplete="off" required />
+      <input type="password" name="senha" id="senha" placeholder="Senha" autocomplete="off" required />
+
+      <button type="submit" id="btn_cadastrar">Cadastrar</button>
+    </form>
+    <p>Já é cadastrado? <a href="../../index.html">Login</a></p>
+  </main>
+</body>
+
+</html>
