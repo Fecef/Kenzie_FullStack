@@ -140,6 +140,7 @@ main ul {
   color: #030000;
 }
 .texto p {
+  word-break: break-word;
   overflow: auto;
   margin-top: 16px;
   font-style: normal;

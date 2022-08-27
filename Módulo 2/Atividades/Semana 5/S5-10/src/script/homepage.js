@@ -69,13 +69,10 @@ class renderHomePage {
       tagH2.innerText = post.user.username;
       tagH2.id = post.user.id;
       tagP.innerText = post.content;
+      tagP.id = "caixa-texto";
       tagDivBtn.classList.add("card_botoes");
-      tagPdata.innerText =
-        post.createdAt.slice(8, 10) +
-        "/" +
-        post.createdAt.slice(5, 7) +
-        "/" +
-        post.createdAt.slice(0, 4);
+      const dataformatada = new Date(post.createdAt);
+      tagPdata.innerText = dataformatada.toLocaleDateString();
 
       tagDivBtn.append(tagPdata);
       tagDiv2.append(tagH2, tagP);
@@ -139,6 +136,8 @@ class Modals {
       const modal = document.getElementById("modal-editar");
       const tagUl = document.querySelector("#tag-ul");
       const modalBack = document.querySelector(".modal-background");
+      const caixaTexto = document.querySelector("#caixa-texto");
+      const textoEdicao = document.querySelector("#texto");
 
       tagUl.addEventListener("click", (e) => {
         let btnEditar = e.target;
@@ -168,7 +167,6 @@ class Modals {
       const tagUl = document.querySelector("#tag-ul");
       tagUl.addEventListener("click", (e) => {
         let btnLixeira = e.target;
-        console.log(btnLixeira);
         if (btnLixeira.className == "imagem_deletar") {
           modalBack.style.display = "block";
           const btnDeletar = document.querySelector(".btn_deletar");
