@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JavaScript: Quadro de Medalhas">
+    <title>JavaScript: Quadro de Medalhas</title>
+    <!-- Folha de Estilo -->
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <!-- Font: Robot 400/500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font: Poppins 500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- Font: Inter 500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+    <!-- Script -->
+    <script defer type="module" src="src/js/index.js"></script>
+    <!-- Fonts Awesome -->
+    <script defer src="https://kit.fontawesome.com/a79ad14f46.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img src="src/img/Group 181.svg" alt="Logo">
+    </header>
+
+    <section>
+        <form id="searchForm" class="search-form container">
+            <label for="search">Pesquisa</label>
+            <img src="src/img/Group 188.svg" alt="search">
+            <input type="text" name="search" id="search" placeholder="Pesquisar por país" autocomplete="off">
+            <small>Ex: Brasil</small>
+            <button type="submit">Pesquisar</button>
+        </form>
+    </section>
+
+    <main class="container">
+        <table class="ranking-table">
+            <tr>
+                <th><button id="ranking">Posição<i class="fa-solid fa-angle-up"></i></button></th>
+                <th>País</th>
+                <th><button id="goldMedals">Ouro<i class="fa-solid fa-angle-down"></i></button></th>
+                <th><button id="silverMedals">Prata<i class="fa-solid fa-angle-down"></i></button></th>
+                <th><button id="bronzeMedals">Bronze<i class="fa-solid fa-angle-down"></i></button></th>
+                <th>Total</th>
+            </tr>
+            <!-- <tr>
+                <td>1º</td>
+                <td>
+                    <img src="src/img/flags/BR.svg" alt="Brasil">
+                    Brasil</td>
+                <td>20</td>
+                <td>20</td>
+                <td>25</td>
+                <td>50</td>
+            </tr> -->
+        </table>
+    </main>
+
+
+</body>
+
+</html>
