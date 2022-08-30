@@ -6,7 +6,7 @@ class Table {
 
     if (tr.length > 0) tr.forEach((el) => el.remove());
 
-    countries.forEach((el, i) => {
+    countries.forEach((el) => {
       const tr = document.createElement("tr");
       const placement = document.createElement("td");
       const country = document.createElement("td");
@@ -52,30 +52,30 @@ class Table {
       return this.render(filtered);
     });
 
-    rankBtn.addEventListener("click", async () => {
-      const desc = await Countries.filterByLowestRank();
-      const asc = await Countries.filterByHighestRank();
+    rankBtn.addEventListener("click", () => {
+      const desc = Countries.filterByLowestRank();
+      const asc = Countries.filterByHighestRank();
       ToolKit.toggle(icon[0], desc, asc);
     });
 
     // Filter by Gold Medals
-    goldBtn.addEventListener("click", async () => {
-      const desc = await Countries.filterByLowestGold();
-      const asc = await Countries.filterByHighestGold();
+    goldBtn.addEventListener("click", () => {
+      const desc = Countries.filterByLowestGold();
+      const asc = Countries.filterByHighestGold();
       ToolKit.toggle(icon[1], desc, asc);
     });
 
     // Filter by Sold Medals
-    silverBtn.addEventListener("click", async () => {
-      const desc = await Countries.filterByLowestSilver();
-      const asc = await Countries.filterByHighestSilver();
+    silverBtn.addEventListener("click", () => {
+      const desc = Countries.filterByLowestSilver();
+      const asc = Countries.filterByHighestSilver();
       ToolKit.toggle(icon[2], desc, asc);
     });
 
     // Filter by Bronze Medals
-    bronzeBtn.addEventListener("click", async () => {
-      const desc = await Countries.filterByLowestBronze();
-      const asc = await Countries.filterByHighestBronze();
+    bronzeBtn.addEventListener("click", () => {
+      const desc = Countries.filterByLowestBronze();
+      const asc = Countries.filterByHighestBronze();
       ToolKit.toggle(icon[3], desc, asc);
     });
   }
@@ -113,14 +113,14 @@ class Countries {
     Table.render(this.ranking);
   }
 
-  static async filterByHighestRank() {
+  static filterByHighestRank() {
     const result = [...this.ranking];
     return result.sort(
       (a, b) => this.totalOverallMedals(b) - this.totalOverallMedals(a)
     );
   }
 
-  static async filterByLowestRank() {
+  static filterByLowestRank() {
     const result = [...this.ranking];
     return result.sort((a, b) => {
       const totalA = this.totalOverallMedals(a);
@@ -133,32 +133,32 @@ class Countries {
     });
   }
 
-  static async filterByHighestGold() {
+  static filterByHighestGold() {
     const result = [...this.ranking];
     return result.sort((a, b) => b.medal_gold - a.medal_gold);
   }
 
-  static async filterByLowestGold() {
+  static filterByLowestGold() {
     const result = [...this.ranking];
     return result.sort((b, a) => b.medal_gold - a.medal_gold);
   }
 
-  static async filterByHighestSilver() {
+  static filterByHighestSilver() {
     const result = [...this.ranking];
     return result.sort((b, a) => a.medal_silver - b.medal_silver);
   }
 
-  static async filterByLowestSilver() {
+  static filterByLowestSilver() {
     const result = [...this.ranking];
     return result.sort((b, a) => b.medal_silver - a.medal_silver);
   }
 
-  static async filterByHighestBronze() {
+  static filterByHighestBronze() {
     const result = [...this.ranking];
     return result.sort((b, a) => a.medal_bronze - b.medal_bronze);
   }
 
-  static async filterByLowestBronze() {
+  static filterByLowestBronze() {
     const result = [...this.ranking];
     return result.sort((b, a) => b.medal_bronze - a.medal_bronze);
   }

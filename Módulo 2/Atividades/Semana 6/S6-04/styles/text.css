@@ -1,0 +1,15 @@
+.title-1 {
+  font-size: var(--font-size-1);
+  font-family: var(--family-poppins);
+  color: var(--color-primary);
+}
+
+.text-1 {
+  font-family: var(--family-poppins);
+  font-size: var(--font-size-2);
+  color: var(--color-black-1);
+}
+
+.anchor-1 {
+  color: var(--color-primary);
+}

@@ -1,0 +1,15 @@
+.button-default {
+  width: 100%;
+  height: 48px;
+
+  background: #f64f11;
+  border-radius: 8px;
+  border: none;
+  color: #ffffffd8;
+  margin-top: 16px;
+}
+
+.button-default:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+}

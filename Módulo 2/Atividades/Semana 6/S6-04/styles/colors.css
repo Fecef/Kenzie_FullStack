@@ -1,0 +1,6 @@
+.background-secondary {
+  background: var(--color-secondary);
+}
+.background-gray {
+  background-color: var(--color-gray-1);
+}
