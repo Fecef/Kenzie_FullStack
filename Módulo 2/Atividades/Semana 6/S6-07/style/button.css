@@ -1,0 +1,31 @@
+.bt {
+  padding: 0 12px;
+  height: 32px;
+  background-color: transparent;
+  border: 2px solid var(--color-grey-1);
+  border-radius: 4px;
+  color: var(--color-grey-1);
+  width: max-content;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.bt:hover {
+  background-color: var(--color-grey-1);
+  color: var(--color-grey-4);;
+  cursor: pointer;
+}
+
+.bt.outline-light {
+  border-color: var(--color-grey-4);;
+  color: var(--color-grey-4);;
+  height: 52px;
+  font-size: var(--font-size-4);
+}
+
+.outline-light:hover {
+  background-color: var(--color-grey-4);;
+  color: var(--color-grey-1);
+}

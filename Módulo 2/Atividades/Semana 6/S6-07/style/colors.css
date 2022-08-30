@@ -1,0 +1,23 @@
+.color-primary{
+    background: linear-gradient(90deg, var(--color-brand-1) 10%, var(--color-brand-2) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.color-grey-1{
+    color: var(--color-grey-1)
+}
+
+.color-grey-2{
+    color: var(--color-grey-2)
+}
+
+.color-grey-3{
+    color: var(--color-grey-3)
+}
+
+.color-grey-4{
+    color: var(--color-grey-4)
+}
+

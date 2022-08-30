@@ -1,0 +1,38 @@
+.card{
+    max-width: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 1px 1px 30px -5px #ced4da;
+}
+
+.card-header{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease transform;
+}
+
+.card:hover .card-header img{
+    transform: scale(1.2);
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 16px;
+}
+
+.card-footer{
+    padding: 20px 16px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
