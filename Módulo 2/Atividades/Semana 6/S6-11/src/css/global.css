@@ -1,0 +1,18 @@
+:root {
+  box-sizing: border-box;
+  font-size: 10px;
+
+  /* Colors */
+  --color-primary: #201e50;
+  --color-secondary: #615cc1;
+  --color-tericary: #e2e1f4;
+  --color-complemtary: #bcc15c;
+  --color-input: #e9ecef;
+
+  /* Font Families */
+  --poppins: "Poppins", sans-serif;
+  --roboto: "Roboto", sans-serif;
+
+  /* Font Sizes */
+  --font-size-2: 3.6rem;
+}

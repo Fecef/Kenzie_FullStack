@@ -1,0 +1,9 @@
+.poppins {
+  font-family: var(--poppins);
+}
+.roboto {
+  font-family: var(--roboto);
+}
+.f-size-2 {
+  font-size: var(--font-size-2);
+}

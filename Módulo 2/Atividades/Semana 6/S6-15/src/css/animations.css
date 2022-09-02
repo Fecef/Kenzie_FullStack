@@ -1,0 +1,28 @@
+.dropdown {
+  animation: dropdown 1s ease-in-out;
+}
+.dropup {
+  animation: dropup 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dropdown {
+  0% {
+    transform: translateY(-40rem);
+  }
+  50% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropup {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40rem);
+  }
+}

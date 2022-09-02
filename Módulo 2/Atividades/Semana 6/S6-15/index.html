@@ -7,17 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="description">
     <title>Document</title>
+    <!-- Font Roboto 500/700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
     <!-- Folha de Estilo -->
-    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variabels.css">
+    <link rel="stylesheet" href="src/css/input.css">
+    <link rel="stylesheet" href="src/css/animations.css">
     <link rel="stylesheet" href="src/css/index.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+    <!-- Fonts Awesome -->
+    <script defer src="https://kit.fontawesome.com/a79ad14f46.js" crossorigin="anonymous"></script>
     <!-- Script -->
-    <script defer src="js/index.js"></script>
+    <script defer src="src/js/index.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <menu class="nav">
+                <i class="fa-solid fa-bars"></i>
 
+                <h1><a class="nav__brand" href="index.html">Tech Blog</a></h1>
+
+                <div data-toggle="toogle" class="nav-bar">
+                    <li><a class="nav__link" href="#">All</a></li>
+                    <li><a class="nav__link" href="#">CSS</a></li>
+                    <li><a class="nav__link" href="#">JavaScript</a></li>
+                    <li><a class="nav__link" href="#">Python</a></li>
+                    <li><a class="nav__link" href="#">Java</a></li>
+                </div>
+
+                <div data-toggle="toogle" class="nav-search">
+                    <label for="search"></label>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="search-input" type="search" name="search" id="search" autocomplete="off"
+                        placeholder="Pesquisar por">
+                    <img src="src/assets/profile.png" alt="Avatar Image">
+                    <span>Samuel Leão</span>
+                </div>
+
+            </menu>
+        </div>
+    </header>
 </body>
 
 </html>

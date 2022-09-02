@@ -5,19 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="description">
-    <title>Document</title>
+    <meta name="description" content=" Entrega - Página de Login">
+    <title>Entrega - Página de Login</title>
     <!-- Folha de Estilo -->
     <link rel="stylesheet" href="src/css/normalize.css">
-    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/text.css">
+    <link rel="stylesheet" href="src/css/button.css">
+    <link rel="stylesheet" href="src/css/input.css">
+    <link rel="stylesheet" href="src/css/flex.css">
+    <link rel="stylesheet" href="src/css/modal.css">
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Poppins 400/700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Roboto 400/700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/a79ad14f46.js" crossorigin="anonymous"></script>
     <!-- Script -->
-    <script defer src="js/index.js"></script>
+    <script defer type="module" src="index.js"></script>
+
 </head>
 
 <body>
+    <main class="container">
+        <section class="login-container">
+            <div class="login d-flex poppins">
+                <img class="w-15" src="src/assets/bats.png" alt="Brand">
+                <p class="f-size-2">Welcome back</p>
+                <small>Please enter your details</small>
 
+                <form class="login-form d-flex">
+                    <label for="email"></label>
+                    <input class="input-1" type="email" name="email" id="email" autocomplete="off"
+                        placeholder="Enter your email" required>
+                    <button class="btn-2 bg-primary" type="submit">Continue</button>
+                </form>
+
+                <div class="login-options d-flex">
+                    <button class="btn-1"> <img class="icon" src="src/assets/icons/google.png" alt="Google"> Continue
+                        with Google</button>
+                    <button class="btn-1"> <img class="icon" src="src/assets/icons/facebook.png" alt="Google"> Continue
+                        with Facebook</button>
+                    <button class="btn-1"> <img class="icon" src="src/assets/icons/apple-big-logo.png" alt="Google">
+                        Continue with Apple</button>
+                </div>
+
+                <small>Forgot your password? <a href="#">Click Here!</a></small>
+            </div>
+        </section>
+
+        <section class="login-aside d-flex">
+            <p></p>
+        </section>
+    </main>
+
+    <div class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="modal-form poppins">
+                <h2 class="f-size-2 ">Lost your password??</h2>
+                <p>Please enter your email to sign in.</p>
+                <label for=" email"></label>
+                <input class="input-1" type="email" name="email" id="email" autocomplete="off"
+                    placeholder="Enter your email" required>
+                <button class="btn-2 bg-primary" type="submit">Continue</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

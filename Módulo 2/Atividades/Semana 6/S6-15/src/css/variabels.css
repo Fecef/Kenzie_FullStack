@@ -1,0 +1,13 @@
+:root {
+  font-size: 10px;
+
+  /* Colors */
+  --color-brand-1: #364fc7;
+  --color-grey-1: #212529;
+  --color-grey-2: #868e96;
+  --color-grey-3: #adb5bd;
+  --color-grey-5: #f1f3f5;
+
+  /* Font Familiies */
+  --roboto: "Roboto", sans-serif;
+}

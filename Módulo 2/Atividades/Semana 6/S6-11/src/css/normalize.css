@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  font-size: 1.6rem;
 }
 
 /**
@@ -75,6 +76,7 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -174,7 +176,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -184,7 +187,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -346,4 +350,12 @@ template {
 
 [hidden] {
   display: none;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
 }
