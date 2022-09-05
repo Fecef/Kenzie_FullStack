@@ -1,0 +1,175 @@
+/* ! Buttons */
+.btn {
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: var(--radius-2);
+  padding: 1.2rem;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.btn:disabled {
+  cursor: default;
+  color: var(--grey-4);
+  background-color: var(--grey-5);
+}
+.btn-thin {
+  padding: 0.5rem 1.2rem;
+}
+.btn-primary {
+  color: var(--white-fixed);
+  background-color: var(--brand-1);
+}
+.btn-primary:hover {
+  background-color: var(--brand-2);
+}
+.btn-dark {
+  color: var(--white-fixed);
+  background-color: var(--grey-2);
+}
+.btn-dark:hover {
+  background-color: var(--grey-1);
+}
+.btn-grey {
+  color: var(--white-fixed);
+  background-color: var(--grey-2);
+}
+.btn-grey:hover {
+  background-color: var(--grey-3);
+}
+.btn-white {
+  color: var(--grey-1);
+  background-color: var(--white-fixed);
+}
+.btn-white:hover {
+  background-color: var(--grey-5);
+}
+.btn-outline {
+  color: var(--grey-1);
+  background-color: var(--white-fixed);
+  border: 1px solid var(--grey-1);
+}
+.btn-outline:hover {
+  color: var(--brand-1);
+  background-color: #edf2ff;
+  border-color: var(--brand-1);
+}
+
+/* Like Button */
+.fa-heart {
+  font-size: 2rem;
+  color: var(--grey-opacity-1);
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.fa-heart:hover {
+  color: var(--orange-1);
+}
+.fa-heart-follow {
+  color: var(--orange-1);
+}
+
+/* ! Inputs */
+.input {
+  outline: transparent;
+  border: 2px solid var(--grey-5);
+  padding: 1.6rem 2rem;
+  border-radius: var(--radius-2);
+  font-size: 1.6rem;
+}
+.input:focus {
+  border: 2px solid var(--brand-1);
+}
+.input::placeholder {
+  color: var(--grey-4);
+}
+
+/* ! Perfil */
+.perfil-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.perfil-avatar-sm {
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+}
+.perfil-avatar-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 12rem;
+}
+
+/* ! Users Posts */
+.post-description {
+  max-height: 72px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* ! Modal */
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-opacity-1);
+}
+.modal-content {
+  position: relative;
+  background-color: var(--white-fixed);
+  border-radius: var(--radius-1);
+  width: 95%;
+  height: 52.2rem;
+  max-height: 75vh;
+  max-width: 76.1rem;
+  padding: 3rem 2rem;
+  overflow: auto;
+}
+.modal-content-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: var(--grey-4);
+  background-color: #f8f9fa;
+  padding: 0.6rem 1.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modal-content-alert {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 2rem;
+  background-color: var(--brand-1);
+  border-radius: var(--radius-1);
+  width: 85%;
+  max-width: 44.6rem;
+  /* animation: modal-in 0.5s ease-out; */
+}
+.modal-content-alert h3,
+.modal-content-alert p {
+  color: var(--white-fixed);
+}
+.modal-content-alert-btn {
+  align-self: flex-end;
+}
+
+/* @MEDIAS */
+@media (min-width: 564px) {
+  .modal-content-alert {
+    bottom: 4rem;
+    right: 4rem;
+  }
+}

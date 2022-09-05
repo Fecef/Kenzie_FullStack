@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rede Social">
+    <title>Rede Social - Home Page</title>
+    <!-- Font Inter 400/600/700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Folha de Estilo -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link rel="stylesheet" href="../styles/component.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+    <!-- Script -->
+    <script defer type="module" src="../scripts/home.js""></script>
+    <!-- Font Awesome -->
+    <script defer src=" https://kit.fontawesome.com/a79ad14f46.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class=" container">
+            <h1><a href="index.html">TechPosters</a></h1>
+            <menu>
+                <li><a class="btn btn-grey hidden" href="../../index.html">Login</a></li>
+                <li><a class="btn btn-grey hidden" href="signup.html">Registro</a></li>
+                <li><a class="btn btn-grey" href="../../index.html">Sair</a></li>
+            </menu>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <section class="comment-section">
+                <div>
+                    <!-- <div class="perfil-card">
+                        <img class="perfil-avatar-sm" src="../assets/bossa.jpg" alt="Avatar">
+                        <div class="perfil-avatar-body">
+                            <h2>Carlos Lima</h2>
+                            <p>UX e UI Designer</p>
+                        </div>
+                        <small>565 seguidores</small>
+                    </div>
+
+                    <label for="commentTitle" class="hidden"></label>
+                    <input class="input" type="text" name="comment-title" id="commentTitle" placeholder="Título">
+                    <textarea class="input" name="comment" id="comment" cols="100" rows="5"
+                        placeholder="O que estou pensando?" maxlength="1000"></textarea>
+                    <button class="btn btn-primary">Postar</button> -->
+                </div>
+
+                <aside id="userSugestions">
+                    <!-- <h2>Sugestões para você seguir</h2>
+                    <menu>
+                        <li class="perfil-card">
+                            <img class="perfil-avatar-sm" src="../assets/bossa.jpg" alt="Avatar">
+                            <div class="perfil-avatar-body">
+                                <h2>Carlos Lima</h2>
+                                <p>UX e UI Designer</p>
+                            </div>
+                            <button class="btn batn-thin btn-primary">Seguindo</button>
+                        </li>
+                        <li class="perfil-card">
+                            <img class="perfil-avatar-sm" src="../assets/bossa.jpg" alt="Avatar">
+                            <div class="perfil-avatar-body">
+                                <h2>Carlos Lima</h2>
+                                <p>UX e UI Designer</p>
+                            </div>
+                            <button class="btn btn-thin btn-outline">Seguir</button>
+                        </li>
+                        <li class="perfil-card">
+                            <img class="perfil-avatar-sm" src="../assets/bossa.jpg" alt="Avatar">
+                            <div class="perfil-avatar-body">
+                                <h2>Carlos Lima</h2>
+                                <p>UX e UI Designer</p>
+                            </div>
+                            <button class="btn btn-thin btn-outline">Seguir</button>
+                        </li>
+                    </menu> -->
+                </aside>
+            </section>
+
+            <section class="posts-section">
+                <!-- <h1>Posts</h1>
+                <menu>
+                    <li>
+                        <div class="perfil-card">
+                            <img class="perfil-avatar-sm" src="../assets/bossa.jpg" alt="Avatar">
+                            <div class="perfil-avatar-body">
+                                <h2>Carlos Lima</h2>
+                                <p>UX e UI Designer</p>
+                            </div>
+                        </div>
+                        <h1>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h1>
+                        <p class="post-description">A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá
+                            iniciar o
+                            seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de
+                            agosto.A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá
+                            iniciar o
+                            seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de
+                            agosto.A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá
+                            iniciar o
+                            seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de
+                            agosto.
+                        </p>
+                        <div class="perfil-footer">
+                            <button class="btn btn-dark">Abrir Post</button>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>25</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="perfil-card">
+                            <img class="perfil-avatar-sm" src="../assets/bossa.jpg" alt="Avatar">
+                            <div class="perfil-avatar-body">
+                                <h2>Carlos Lima</h2>
+                                <p>UX e UI Designer</p>
+                            </div>
+                        </div>
+                        <h1>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h1>
+                        <p class="post-description">A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá
+                            iniciar o
+                            seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de
+                            agosto.
+                        </p>
+                        <div class="perfil-footer">
+                            <button class="btn btn-dark">Abrir Post</button>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>25</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="perfil-card">
+                            <img class="perfil-avatar-sm" src="../assets/bossa.jpg" alt="Avatar">
+                            <div class="perfil-avatar-body">
+                                <h2>Carlos Lima</h2>
+                                <p>UX e UI Designer</p>
+                            </div>
+                        </div>
+                        <h1>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h1>
+                        <p class="post-description">A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá
+                            iniciar o
+                            seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de
+                            agosto.
+                        </p>
+                        <div class="perfil-footer">
+                            <button class="btn btn-dark">Abrir Post</button>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>25</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="perfil-card">
+                            <img class="perfil-avatar-sm" src="../assets/bossa.jpg" alt="Avatar">
+                            <div class="perfil-avatar-body">
+                                <h2>Carlos Lima</h2>
+                                <p>UX e UI Designer</p>
+                            </div>
+                        </div>
+                        <h1>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h1>
+                        <p class="post-description">A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá
+                            iniciar o
+                            seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de
+                            agosto.
+                        </p>
+                        <div class="perfil-footer">
+                            <button class="btn btn-dark">Abrir Post</button>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>25</span>
+                        </div>
+                    </li>
+                </menu> -->
+            </section>
+        </section>
+    </main>
+
+    <div id="modal" class="modal hidden">
+        <!-- <div class="modal-content">
+            <div class="perfil-card">
+                <img class="perfil-avatar-sm" alt="Avatar">
+                <div class="perfil-avatar-body">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+            <h1></h1>
+            <p></p>
+            <button class="btn btn-white modal-content-btn">&times</button>
+        </div> -->
+    </div>
+</body>
+
+</html>

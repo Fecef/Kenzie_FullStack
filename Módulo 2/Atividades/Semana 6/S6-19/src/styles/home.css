@@ -1,0 +1,108 @@
+/* PÁGINA INICIAL */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15rem 1rem 4rem;
+  gap: 5rem;
+}
+main > section {
+  min-width: 30rem;
+  max-width: 77rem;
+}
+main > section .comment-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main > section .comment-section > div {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+main > section .comment-section > div .btn {
+  align-self: flex-end;
+}
+main > section .comment-section > div .input {
+  margin-bottom: 2rem;
+}
+main > section .comment-section > div small {
+  padding-bottom: 2rem;
+}
+main > section .posts-section > h1 {
+  margin: 4rem 0;
+}
+main > section .posts-section > menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+main > section .posts-section > menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main > section .posts-section > menu li .perfil-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main > section .posts-section > menu li .perfil-card {
+  margin: 0;
+}
+main > section .posts-section > menu li .perfil-card p {
+  text-overflow: ellipsis;
+}
+main aside {
+  position: static;
+  margin: 5rem 0;
+  align-self: flex-start;
+  max-width: 100%;
+}
+main aside > h2 {
+  margin-bottom: 4rem;
+}
+main aside menu {
+  display: flex;
+  gap: 5rem;
+  overflow-x: auto;
+}
+main aside menu li button {
+  margin-left: auto;
+  align-self: baseline;
+}
+
+/*  @MEDIAS */
+@media (min-width: 330px) {
+  main {
+    padding: 15rem 2rem;
+  }
+}
+@media (min-width: 1165px) {
+  main {
+    flex-wrap: nowrap;
+  }
+  main > section {
+    min-width: 30rem;
+    max-width: 80%;
+  }
+  main > section .comment-section {
+    gap: 5rem;
+  }
+  main > section .comment-section > div {
+    width: 50%;
+  }
+  main > section .posts-section {
+    width: 50%;
+  }
+  main aside {
+    position: fixed;
+    width: 40rem;
+    top: 10rem;
+    right: 10vw;
+  }
+  main aside menu {
+    display: block;
+  }
+}

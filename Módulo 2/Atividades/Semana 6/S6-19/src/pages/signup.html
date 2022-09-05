@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rede Social">
+    <title>Rede Social - Cadastro</title>
+    <!-- Font Inter 400/600/700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Folha de Estilo -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link rel="stylesheet" href="../styles/component.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/signup.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+    <!-- Font Awesome -->
+    <script defer src="https://kit.fontawesome.com/a79ad14f46.js" crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script defer type="module" src="../scripts/signup.js""></script>
+</head>
+
+<body>
+    <header>
+        <nav class=" container">
+            <h1><a href="index.html">TechPosters</a></h1>
+            <menu>
+                <li><a class="btn btn-grey" href="../../index.html">Login</a></li>
+                <li><a class="btn btn-grey" href="signup.html">Registro</a></li>
+            </menu>
+        </nav>
+    </header>
+
+    <main class="container">
+        <form>
+            <div>
+                <h1>Cadastro</h1>
+                <a href="../../index.html" class="btn btn-thin btn-outline">Voltar</a>
+            </div>
+            <label for="name" class="hidden"></label>
+            <input class="input" type="text" name="name" id="name" autocomplete="off" placeholder="Seu nome" required>
+            <label for="email" class="hidden"></label>
+            <input class="input" type="email" name="email" id="email" autocomplete="off" placeholder="Seu e-mail"
+                required>
+            <label for="password" class="hidden"></label>
+            <input class="input" type="password" name="password" id="password" placeholder="Sua senha" required>
+            <label for="workAt" class="hidden"></label>
+            <input class="input" type="text" name="workAt" id="workAt" autocomplete="off" placeholder="Qual o seu trabalho?" required>
+            <label for="img-url" class="hidden"></label>
+            <input class="input" type="text" name="img-url" id="imgUrl" autocomplete="off" placeholder="URL da imagem de perfil" required>
+            <button class="btn btn-primary" type="submit">Registrar</button>
+            <small>Já possui login?</small>
+            <a href="../../index.html" class="btn btn-outline">Ir para página de login</a>
+        </form>
+    </main>
+
+    <div class="modal hidden">
+        <div class="modal-content-alert">
+            <h3>Cadastro não autorizado</h3>
+            <p>Este e-mail já está em uso.</p>
+            <button class="btn btn-white modal-content-alert-btn">Entendi</button>
+        </div>
+    </div>
+</body>
+
+</html>

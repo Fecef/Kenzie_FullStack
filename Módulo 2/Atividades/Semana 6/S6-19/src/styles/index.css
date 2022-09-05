@@ -1,0 +1,24 @@
+/* PÁGINA INICIAL */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 2.4rem;
+  width: 80%;
+  max-width: 40rem;
+  border-radius: var(--radius-1);
+  background-color: var(--white-fixed);
+}
+form small {
+  text-align: center;
+}
+
+/* @MEDIA */
