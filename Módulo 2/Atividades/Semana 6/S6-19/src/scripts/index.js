@@ -5,9 +5,9 @@ class SignIn {
 
   static async signIn() {
     const form = document.querySelector("form");
-    const validate = await ApiRequest.findUser(this.id);
+    const user = await ApiRequest.findUser(this.id);
 
-    if (!validate.detail) {
+    if (user.uuid === this.id) {
       return window.location.replace("src/pages/home.html");
     }
 

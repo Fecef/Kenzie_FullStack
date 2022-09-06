@@ -5,16 +5,20 @@ class HomeFeature {
   static id = localStorage.getItem("@kenzie:id");
   static hasId = this.id !== null;
 
-  static access() {
+  static async access() {
     const headerBtn = document.querySelectorAll(".btn-grey");
+    const user = await ApiRequest.findUser(this.id);
 
-    if (this.hasId) {
+    console.log(user.uuid);
+
+    if (this.id === user.uuid) {
       headerBtn[0].classList.add("hidden");
       headerBtn[1].classList.add("hidden");
-      return;
+    } else {
+      headerBtn[0].classList.remove("hidden");
+      headerBtn[1].classList.remove("hidden");
+      window.location.replace("../../index.html");
     }
-    headerBtn[0].classList.remove("hidden");
-    headerBtn[1].classList.remove("hidden");
   }
 
   static logOut() {
@@ -67,6 +71,7 @@ class HomeFeature {
           el.classList.remove("btn-primary");
           el.classList.add("btn-outline");
           el.innerText = "Seguir";
+
           const followerUser = await ApiRequest.findUser(el.id);
           const ass = followerUser.followers.filter((la) => {
             if (la.followers_users_id.uuid == this.id) {
@@ -163,7 +168,7 @@ class Render {
     button.classList.add("btn");
     button.innerText = "Postar";
     button.disabled = true;
-    small.innerText = user.followers_amount
+    small.innerText = user.followers_amount;
 
     divpai.append(div, label, input, textarea, button);
     div.append(img, divdiv, small);
