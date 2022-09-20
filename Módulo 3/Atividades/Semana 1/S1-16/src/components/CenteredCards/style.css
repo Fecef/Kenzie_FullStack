@@ -1,0 +1,16 @@
+.card-wrapper {
+  display: inline-block;
+  background-color: blueviolet;
+  text-align: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 8px;
+  margin-left: 1rem;
+}
+
+.card-wrapper span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

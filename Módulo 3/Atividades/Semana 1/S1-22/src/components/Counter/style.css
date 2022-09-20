@@ -1,0 +1,18 @@
+div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background-color: blueviolet;
+  cursor: pointer;
+  padding: 2rem;
+}
