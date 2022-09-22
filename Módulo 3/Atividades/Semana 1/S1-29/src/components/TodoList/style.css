@@ -1,0 +1,22 @@
+menu {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  width: 25rem;
+}
+
+menu li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+menu button {
+  background-color: #6835f5;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  width: 10rem;
+  height: 2.5rem;
+  cursor: pointer;
+}

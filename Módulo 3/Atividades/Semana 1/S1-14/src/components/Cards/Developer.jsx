@@ -5,7 +5,7 @@ export const Card = ({ name, age, country }) => {
     <menu>
       <li >
         <h2>Dev: {name}</h2>
-        <p>age: {age}</p>
+        <p>Age: {age}</p>
         <p>País: {country}</p>
       </li>
     </menu>

@@ -1,0 +1,22 @@
+form {
+  display: flex;
+  gap: 2rem;
+}
+
+form input {
+  width: 11rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  outline: transparent;
+}
+
+form button {
+  background-color: #6835f5;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  width: 10rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
