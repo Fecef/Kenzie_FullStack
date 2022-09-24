@@ -1,0 +1,29 @@
+section {
+  position: relative;
+  border: 1px solid var(--color-grey-2);
+  border-radius: var(--radius-2);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+section h2 {
+  margin: 0;
+  font-size: var(--font-size-4);
+  font-weight: var(--weigth-2);
+}
+
+section p {
+  font-size: var(--font-size-5);
+  font-weight: var(--weigth-4);
+  color: var(--color-grey-4);
+  margin: 0;
+  margin-top: 2rem;
+}
+
+section span {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  color: var(--color-primary-1);
+  font-weight: var(--weigth-2);
+}

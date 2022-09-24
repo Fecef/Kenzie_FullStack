@@ -1,0 +1,88 @@
+/* General */
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-grey-2);
+  border-radius: var(--radius-2);
+  padding: 3.5rem 2rem;
+  gap: 4rem;
+}
+
+label {
+  font-size: var(--font-size-5);
+  color: var(--color-grey-4);
+}
+
+input,
+select {
+  border: 2px solid transparent;
+  border-radius: var(--radius-1);
+  padding: 1rem;
+  background-color: var(--color-grey-1);
+  font-size: var(--font-size-4);
+  outline: transparent;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--color-grey-4);
+}
+
+input::placeholder {
+  color: var(--color-grey-4);
+}
+
+select {
+  font-size: var(--font-size-5);
+}
+
+button {
+  border: none;
+  border-radius: var(--radius-1);
+  background-color: var(--color-primary-1);
+  font-weight: var(--weigth-3);
+  font-family: var(--family-1);
+  font-size: var(--font-size-4);
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* Main */
+.form-descricao small {
+  font-size: var(--font-size-5);
+  color: var(--color-grey-3);
+}
+
+.form-valor {
+  position: relative;
+}
+
+.form-valor input {
+  padding: 1rem 4rem 1rem 1rem;
+}
+
+.form-valor span {
+  position: absolute;
+  color: var(--color-grey-3);
+  right: 1.5rem;
+  top: 3.7rem;
+}
+
+/* Extras */
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.d-flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.d-flex-row > div {
+  width: 45%;
+}

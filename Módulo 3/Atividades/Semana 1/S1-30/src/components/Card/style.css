@@ -1,0 +1,102 @@
+.menu li {
+  position: relative;
+  height: 8.7rem;
+  padding-left: 0.5rem;
+  border-radius: var(--radius-2);
+  margin-top: 3rem;
+  overflow: auto;
+}
+
+.menu .no-card {
+  width: 100%;
+}
+
+.menu div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--color-grey-1);
+  padding-left: 2rem;
+}
+
+.menu li span:first-child {
+  position: static;
+  display: block;
+  height: 1.3rem;
+  background-color: var(--color-grey-2);
+  width: 60%;
+}
+
+.menu li span:last-child {
+  position: static;
+  display: block;
+  height: 1.3rem;
+  background-color: var(--color-grey-2);
+  width: 15%;
+}
+
+.menu li div h2 {
+  font-weight: var(--weigth-2);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 70%;
+}
+
+.menu li div small {
+  font-size: var(--font-size-5);
+  color: var(--color-grey-3);
+}
+
+.menu .valor-entrada {
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0;
+}
+
+.menu .valor-entrada p {
+  font-weight: var(--weigth-4);
+  color: var(--color-grey-3);
+  margin: 0;
+}
+
+.menu .fa-trash {
+  color: #343a40;
+  border: 8px solid var(--color-grey-2);
+  border-radius: var(--radius-2);
+  cursor: pointer;
+}
+
+/* Extras */
+.Entrada {
+  background-color: var(--color-secondary);
+}
+
+.positivo {
+  color: var(--color-secondary) !important;
+}
+
+.negativo {
+  color: var(--color-primary-1) !important;
+}
+
+.Despesa {
+  background-color: var(--color-grey-2);
+}
+
+@media (min-width: 455px) {
+  .menu .valor-entrada {
+    flex-direction: row;
+  }
+
+  .menu .valor-entrada p {
+    flex-direction: row;
+    margin: 0 2rem 0 0;
+  }
+}

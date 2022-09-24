@@ -1,0 +1,49 @@
+.section {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--family-1);
+}
+
+.section h1 {
+  color: var(--color-grey-4);
+  font-size: var(--font-size-2);
+}
+
+.section > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.section div h2 {
+  color: var(--color-grey-4);
+  font-size: var(--font-size-4);
+  margin-right: auto;
+}
+
+.section div button {
+  list-style: none;
+  border-radius: var(--radius-1);
+  background-color: var(--color-grey-2);
+  color: var(--color-grey-4);
+  cursor: pointer;
+  font-size: var(--font-size-4);
+  font-weight: var(--weigth-3);
+  margin-right: 1rem;
+  width: fit-content;
+  transition-duration: 0.1s;
+}
+
+.section div button:hover,
+.section div button:focus {
+  color: #fff;
+  background-color: var(--color-primary-1);
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,31 @@
+header {
+  font-family: var(--family-1);
+  background-color: #f8f9fa;
+  box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+  padding: 2rem 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+header nav menu li {
+  list-style: none;
+  border-radius: var(--radius-1);
+  background-color: var(--color-grey-2);
+  color: var(--color-grey-4);
+  cursor: pointer;
+  font-size: var(--font-size-4);
+  font-weight: var(--weigth-3);
+  padding: 1rem 1.5rem;
+  transition-duration: 0.1s;
+}
+
+header nav menu li:hover {
+  background-color: var(--color-primary-1);
+  color: #fff;
+}
