@@ -1,0 +1,32 @@
+.display-container {
+  margin-top: 50px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+  width: 70%;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 720px) {
+  .display-container {
+    width: 80%;
+
+    flex-direction: column;
+  }
+}
+
+.display-container:hover {
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.display-city {
+  font-size: calc(30px + 4vmin);
+}
+
+.display-temperature {
+  font-size: calc(25px + 2vmin);
+}
