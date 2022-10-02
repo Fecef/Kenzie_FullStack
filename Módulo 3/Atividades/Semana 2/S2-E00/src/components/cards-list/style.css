@@ -1,0 +1,20 @@
+.filter-container {
+  width: 75vw;
+  height: 13vh;
+  border: 1px solid firebrick;
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+
+@media (min-width: 1023px) {
+  .filter-container {
+    width: 33vw;
+    height: 10vh;
+    margin: 1rem;
+    margin-left: 60vw;
+  }
+
+  input {
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  background-color: #308835;
+}
+
+.main-container {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.main-title {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 300;
+}
+
+.new-deck-button {
+  width: 14rem;
+  height: 3rem;
+  margin: 2rem;
+  border-radius: 10px;
+}
