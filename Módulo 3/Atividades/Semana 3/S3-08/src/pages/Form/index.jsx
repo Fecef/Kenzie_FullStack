@@ -5,14 +5,6 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 
-/* 
-    Deve haver um campo de texto (nome, por exemplo) que aceita até 18 caracteres e seu preenchimento deve ser obrigatório;
-    Deve haver um campo para email, obrigatório.
-    Senha e confirmação de senha, ambos obrigatórios;
-    Deve haver também pelo menos mais 3 campos com validações e obrigatórios, use a sua criatividade!
-    Renderize um card com todas as informações do usuário após o submit.
-*/
-
 export function FormUser() {
   const [userData, setUserData] = useState({});
 
@@ -33,7 +25,7 @@ export function FormUser() {
     handleSubmit,
     formState: { errors },
   } = useForm({
-    // resolver: yupResolver(formSchema),
+    resolver: yupResolver(formSchema),
   });
 
   const onSubmitFunction = (data) => setUserData(data);
