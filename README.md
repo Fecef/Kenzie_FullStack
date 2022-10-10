@@ -12,7 +12,7 @@ Todas as atividades realizadas na Kenzie Academy.
 - Lógica de Programação
 - Contrle de Versão GIT
 
-<h2>Módulo 2 ❌</h2>
+<h2>Módulo 2 ✔️</h2>
 
 - JavaScript(ES6)
 - Programação Orientada a Objetos
