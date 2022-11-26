@@ -21,7 +21,7 @@ Todas as atividades realizadas na Kenzie Academy.
 - Qade TDD com Jest, BDD com Cucumber
 - Noções de UX
 
-<h2>Módulo 3 ❌</h2>
+<h2>Módulo 3 ✔️</h2>
 
 - React
 - Hooks
