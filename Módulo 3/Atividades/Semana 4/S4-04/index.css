@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  width: 300px;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  font-size: 22px;
+}
+form button {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: green;
+  border: 1px solid black;
+}
+
+div.todos-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+div.todos-list button {
+  padding: 5px;
+  color: white;
+  border-radius: 8px;
+  background-color: red;
+  border: 1px solid black;
+}
+div.todos-list input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+}
+div.todos-list ul {
+  margin: 10px 0 50px;
+  list-style-type: none;
+}
+div.todos-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+div.todos-list li span {
+  font-size: 32px;
+  margin: 0 10px;
+}
+
+li span {
+  font-size: 32px;
+  margin: 0 10px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+p {
+  font-size: 32px;
+}
