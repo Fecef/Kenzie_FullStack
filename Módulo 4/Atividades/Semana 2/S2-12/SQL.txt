@@ -1,0 +1,19 @@
+create table if not exists produtos (
+	id BIGSERIAL primary key,
+	nome varchar(50) not null,
+	preco float not null
+)
+
+insert into
+	produtos (nome, preco)
+values 
+	('Geladeira', 1299.99),
+	('Fogão', 699.90),
+	('Mesa', 289.89),
+	('Cama de Solteiro', 599.99),
+	('Televisão 42"', 1799.99),
+	('Notebook', 3959.99),
+	('Cadeira', 72.99)
+returning *;
+
+select avg(preco) from produtos;

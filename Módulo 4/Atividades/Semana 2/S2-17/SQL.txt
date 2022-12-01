@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS departamentos (
+    id BIGSERIAL PRIMARY KEY,
+    nome VARCHAR(100) UNIQUE NOT NULL,
+    numero_de_funcionarios INTEGER NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS gerentes (
+    id BIGSERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    sobrenome VARCHAR(100) NOT NULL
+);
+
+ALTER TABLE gerentes ADD COLUMN departamento_id INTEGER UNIQUE NOT NULL;
+
+ALTER TABLE gerentes ADD FOREIGN KEY (departamento_id) REFERENCES departamentos (id);
+ 
+ALTER TABLE gerentes DROP COLUMN departamento_id;

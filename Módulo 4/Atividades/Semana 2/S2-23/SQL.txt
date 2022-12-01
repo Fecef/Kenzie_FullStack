@@ -1,0 +1,79 @@
+CREATE TABLE IF NOT EXISTS profissionais (
+    id BIGSERIAL PRIMARY KEY,
+	nome VARCHAR(128) NOT NULL,
+	especializacao VARCHAR(128) NOT NULL
+ );
+ 
+CREATE TABLE IF NOT EXISTS pacientes (
+	id BIGSERIAL PRIMARY KEY,
+	nome VARCHAR(128) NOT NULL,
+	email VARCHAR(128) NOT NULL,
+	telefone VARCHAR(64)
+);
+
+CREATE TABLE IF NOT EXISTS procedimentos (
+	id BIGSERIAL PRIMARY KEY,	
+	descricao VARCHAR(256) NOT NULL,
+	profissional_id INT NOT NULL,
+	paciente_id INT NOT NULL,
+	FOREIGN KEY (profissional_id) REFERENCES profissionais (id) ON DELETE CASCADE,
+	FOREIGN KEY (paciente_id) REFERENCES pacientes (id) ON DELETE CASCADE
+);
+
+INSERT INTO profissionais
+    (nome, especializacao)
+VALUES
+    ('Dra. Lúcia', 'Aparelho digestivo'),
+    ('Dr. Carlos', 'Coloproctologia'),
+    ('Dra. Elizabeth', 'Mastologia'),
+    ('Dr. Matheus', 'Cardiovascular'),
+    ('Dra. Cássia', 'Aparelho digestivo'),
+    ('Dra. Marcela', 'Cardiovascular'),
+    ('Dr. João', 'Mastologia');
+
+INSERT INTO pacientes
+    (nome, email, telefone)
+VALUES
+    ('Helena', 'helena02@mail.com', '12345678'),
+    ('Gabriela', 'gabi1092@mail.com', null),
+    ('Guilherme', 'gui_lherme@mail.com', '76543218'),
+    ('Marcos', 'marquin@mail.com', '65432187'),
+    ('Lissandra', 'lis182@mail.com', null),
+    ('Eduarda', 'duda04@mail.com', '12523659'),
+    ('Pedro', 'pedrinho2000@mail.com', null);
+
+INSERT INTO procedimentos
+    (profissional_id, paciente_id, descricao)
+VALUES
+    (1, 4, 'Cirurgia do Refluxo Gastresofágico'),
+    (1, 5, 'Cirurgia de Vesícula Biliar'),
+    (4, 4, 'Implante de Marcapasso'),
+    (2, 1, 'Cirurgia de Diverticulite'),
+    (3, 3, 'Implante de Silicone'),
+    (1, 2, 'Cirurgia Bariátrica'),
+    (2, 5, 'Cirurgia Colorretal Videolaparoscópica'),
+    (4, 2, 'Implante de Marcapasso'),
+    (1, 5, 'Cirurgia de Hérnia Abdominal'),
+    (6, 7, 'Cirurgia de Aneurisma da Aorta Torácica'),
+    (6, 1, 'Implante de Marcapasso'),
+    (5, 7, 'Cirurgia Bariátrica');
+    
+SELECT COUNT(paciente_id) pacientes_cardiovascular FROM procedimentos 
+INNER JOIN pacientes ON pacientes.id = procedimentos.paciente_id
+INNER JOIN profissionais ON profissionais.id = procedimentos.profissional_id
+WHERE profissionais.especializacao = 'Cardiovascular';
+
+SELECT nome, email, telefone, procedimentos.descricao FROM pacientes 
+FULL OUTER JOIN procedimentos ON pacientes.id = procedimentos.paciente_id;
+
+SELECT pacientes.nome FROM pacientes
+INNER JOIN procedimentos ON pacientes.id = procedimentos.paciente_id
+INNER JOIN profissionais ON profissionais.id = procedimentos.profissional_id
+WHERE profissionais.nome = 'Dra. Lúcia' AND pacientes.telefone IS NOT NULL;
+
+SELECT procedimentos.descricao, profissionais.nome FROM procedimentos
+INNER JOIN profissionais ON profissionais.id = procedimentos.profissional_id
+INNER JOIN pacientes ON pacientes.id = procedimentos.paciente_id
+WHERE pacientes.nome = 'Lissandra' AND profissionais.especializacao = 'Aparelho digestivo';
+
+SELECT email FROM pacientes WHERE telefone IS NULL;

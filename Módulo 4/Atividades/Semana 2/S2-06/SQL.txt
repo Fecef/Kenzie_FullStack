@@ -1,0 +1,31 @@
+create table if not exists cursos (
+	id BIGSERIAL primary key,
+	nome varchar(200),
+	tema varchar(300),
+	duracao integer not null
+	);
+
+create table if not exists livros (
+	id BIGSERIAL primary key,
+	nome varchar(200) unique key,
+	autor varchar(200),
+	paginas integer not null, check(paginas > 0)
+	);
+
+create table if not exists animais (
+	id BIGSERIAL primary key,
+	nome varchar(200),
+	especie varchar(200),
+	raca varchar(200),
+	idade integer not null, check (idade > 0)
+	);
+
+create table if not exists carros (
+	placa varchar(10) primary key,
+	modelo varchar(100),
+	marca varchar(100),
+	ano integer not null, check (ano > 0),
+	numero_de_donos integer not null, check (numero_de_donos > 0),
+	km_rodados float not null,
+	alugado boolean
+	);

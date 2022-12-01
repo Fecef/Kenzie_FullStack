@@ -1,0 +1,45 @@
+CREATE TABLE IF NOT EXISTS continentes (
+    id BIGSERIAL PRIMARY KEY,
+    nome VARCHAR(128) UNIQUE NOT NULL,
+    area INTEGER NOT NULL -- em Km² (quilômetros quadrados)
+);
+
+CREATE TABLE IF NOT EXISTS paises (
+    id BIGSERIAL PRIMARY KEY,
+    nome VARCHAR(128) UNIQUE NOT NULL,
+    capital VARCHAR(128) UNIQUE NOT NULL,
+    populacao INTEGER NOT NULL
+);
+
+ALTER TABLE paises ADD COLUMN continente_id INTEGER NOT NULL;
+
+ALTER TABLE paises ADD FOREIGN KEY (continente_id) REFERENCES continentes (id);
+
+INSERT INTO
+	continentes (nome, area)
+VALUES
+	('Ásia', 43810000),
+	('América', 42330000),
+	('África', 30370000),
+	('Antártida', 13720000),
+	('Europa', 10180000),
+	('Oceania', 9008458);
+
+INSERT INTO
+	paises (nome, capital, populacao, continente_id)
+VALUES
+	('França', 'Paris', 67158000, 5),
+	('EUA', 'Washington D.C.', 325000000, 2),
+	('Alemanha', 'Berlim', 82349400, 5),
+	('Japão', 'Tóquio', 126672000, 1),
+	('Egito', 'Cairo', 96308900, 3),
+	('Brasil', 'Brasília', 208385000, 2),	
+	('Austrália', 'Camberra', 25690000, 6);
+	
+
+SELECT * FROM continentes WHERE area > 15000000;
+SELECT * FROM continentes WHERE NOME LIKE 'A%' OR NOME LIKE 'Á%';
+SELECT paises.nome, paises.populacao FROM paises INNER JOIN continentes ON paises.continente_id = continentes.id WHERE continentes.nome = 'América';
+SELECT SUM(paises.populacao) FROM paises INNER JOIN continentes ON paises.continente_id = continentes.id WHERE continentes.nome = 'Europa';
+SELECT * FROM continentes FULL OUTER JOIN paises ON paises.continente_id = continentes.id;
+SELECT p.nome, p.capital FROM paises AS p INNER JOIN continentes AS c ON p.continente_id = c.id WHERE p.populacao > 250000000;  

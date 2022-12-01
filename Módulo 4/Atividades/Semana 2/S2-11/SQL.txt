@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS usuarios (
+        id BIGSERIAL PRIMARY KEY,
+        nome VARCHAR(50) NOT NULL,
+        idade INTEGER,
+        CHECK (idade > 0),
+        endereco_id INTEGER,
+        CONSTRAINT fk_end_usu FOREIGN KEY(endereco_id) REFERENCES enderecos(id)
+      );
+
+insert into 
+	usuarios (id, nome)
+values
+	(1, 'Lucas'),
+	(2, 'Andressa'),
+	(3, 'Ana'),
+	(4, 'José'),
+	(5, 'Débora'),
+	(6, 'Jaqueline')
+returning *;
+
+select nome, char_length(nome) as comprimento from usuarios order by comprimento desc;

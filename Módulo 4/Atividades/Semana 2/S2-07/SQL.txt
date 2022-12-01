@@ -1,0 +1,34 @@
+create table if not exists livros (
+	id BIGSERIAL primary key,
+	nome varchar(200) unique key,
+	autor varchar(200),
+	paginas integer not null, check(paginas > 0)
+	);
+	
+insert into 
+	livros (nome, autor, paginas) 
+	values 
+	('Como Fazer Amigos e Influenciar Pessoas', 'Dale Carnegie', 256),
+	('O Poder do Hábito', 'Charles Duhigg', 408),
+	('Os 7 Hábitos das Pessoas Altamente Eficazes', 'Sthephen R. Covey', 462),
+	('Mindset: A Nova Psicologia do Sucesso', 'Carol S. Dweck', 312),
+	('Inteligência Emocional', 'Daniel Goleman', 384),
+	('Comece Pelo Porquê', 'Simon Sinek', 256),
+	('O Milagre da Manhã', 'Hal Elrod', 196),
+	('A Coragem de Ser Imperfeito', 'Brené Brown', 208),
+	('A tríade do tempo', 'Christian Barbosa', 208),
+	('O Corpo Fala', 'Pierre Weil', 288),
+	('A Arte de Ler Mentes', 'Henrik Fexeus', 256),
+	('Inteligência Visual', 'Amy E. Herman', 336),
+	('O Poder da Presença', 'Amy Cuddy', 256),
+	('Rápido e Devagar', 'Daniel Kahneman', 608),
+	('Pense de Novo', 'Adam Grant', 304),
+	('A Voz na Sua Cabeça', 'Ethan Kross', 240);
+	
+select * from livros;
+select * from livros where paginas > 200;
+select nome from livros where paginas > 400;
+select * from livros where nome like 'O%';
+select autor from livros where autor like 'A%';
+select * from livros where nome like 'A%' and paginas > 250;
+select nome, paginas  from livros where nome like 'O%';

@@ -1,0 +1,30 @@
+create table if not exists cars (
+	placa varchar(10) primary key,
+	model varchar(100),
+	marca varchar(100),
+	ano integer not null, check (ano > 0),
+	numero_de_donos integer not null, check (numero_de_donos > 0),
+	km float
+	);
+
+insert into 
+	cars (placa, model, marca, ano, numero_de_donos, km)
+	values 
+	('ITH2662', 'Palio', 'Fiat', 1999, 3, 120004.50),
+	('JTT0001', 'Uno', 'Fiat', 1998, 5, 200147.50),
+	('TJI4875', 'Corsa', 'Chevrolet', 2005, 3, 100111.15),
+	('ADS5545', 'Celta', 'Chevrolet', 2001, 2, 80078.50),
+	('IJT4A55', 'Fiorino', 'Fiat', 2004, 3, 212000.50),
+	('GAE1554', 'Clio', 'Renault', 2007, 2, 112000.50),
+	('IIR5552', '206', 'Renault', 2011, 1, 70400.50);
+
+alter table cars rename km to km_rodado;
+alter table cars add column alugado boolean;
+update cars set alugado = false;
+update cars set numero_de_donos = 1 where placa = 'JTT000';
+alter table cars alter column numero_de_donos drop not null;
+update cars set numero_de_donos = null where placa = 'JTT0001';
+update cars set alugado = true where placa = 'ijt4a55';
+update cars set marca = 'Peugeot' where placa = 'IIR5552';
+alter table cars drop column km_rodado;
+delete from cars where model like 'C%' returning *;
