@@ -1,0 +1,31 @@
+{
+  "name": "m4-atividade-refatoracao",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "sucrase": "^3.26.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenzie-Academy-Brasil-Developers/m4-atividade_refatorando_aplicacao.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kenzie-Academy-Brasil-Developers/m4-atividade_refatorando_aplicacao/issues"
+  },
+  "homepage": "https://github.com/Kenzie-Academy-Brasil-Developers/m4-atividade_refatorando_aplicacao#readme",
+  "description": ""
+}

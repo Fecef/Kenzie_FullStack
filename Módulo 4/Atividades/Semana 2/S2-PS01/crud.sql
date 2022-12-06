@@ -35,7 +35,7 @@ SELECT * FROM clientes cl
 INNER JOIN pedidos pe ON pe.cliente_id = cl.id
 INNER JOIN produtos_pedidos prpe ON prpe.pedido_id = pe.id
 INNER JOIN produtos pr ON pr.id = prpe.produto_id
-ORDER BY cl.lealdade ASC;
+WHERE cl.nome = 'Georgia';
 
 
 -- Atualização
