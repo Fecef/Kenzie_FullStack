@@ -24,11 +24,12 @@ def remove_more_than_two_repetitions(str):
     result = str[:2]
 
     for char in str[2:]:
-        if result[-1] and result[-2] != char:
+        if result[-1] != char or result[-2] != char:
             result += char
 
     return result
 
 
 print(remove_more_than_two_repetitions(
-    "Ollloco meuuuu, taaa peegaando fogoo biiiiichooo"))
+    "Ollloco meuuuu, taaa peegaando fogoo biiiiichooo")
+)
