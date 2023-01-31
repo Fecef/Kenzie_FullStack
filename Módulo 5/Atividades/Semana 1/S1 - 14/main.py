@@ -16,7 +16,7 @@ def main():
     # print(calc_exceed_weight(80))
     # print(pay_day(60, 178))
     # print(how_many_paint_cant(60))
-    print(paint_house_calc(150))
+    # print(paint_house_calc(150))
     # print(estimate_download_time(44000, 88))
     # print(average_note(8.6, 5))
     # print(return_triangle(15, 10, 5))
