@@ -31,7 +31,7 @@ Todas as atividades realizadas na Kenzie Academy.
 - Consumo de API's
 - Metodologias Ágeis
 
-<h2>Módulo 4 ❌</h2>
+<h2>Módulo 4 ✔️</h2>
 
 - NodeJs, Express
 - TypeScript
@@ -39,7 +39,7 @@ Todas as atividades realizadas na Kenzie Academy.
 - Construção de API's RESProgramação Assíncrona
 - Metodologias Ágeis
 
-<h2>Módulo 5 ❌</h2>
+<h2>Módulo 5 ✔️</h2>
 
 - Python
 - Django
