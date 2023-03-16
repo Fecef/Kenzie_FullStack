@@ -14,9 +14,12 @@ class SongView(ListCreateAPIView, PageNumberPagination):
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticatedOrReadOnly]
 
-    queryset = Song.objects.all()
     serializer_class = SongSerializer
 
     def perform_create(self, serializer):
         album = get_object_or_404(Album, pk=self.kwargs["pk"])
         return serializer.save(album=album)
+
+    def get_queryset(self):
+        queryset = Song.objects.filter(album=self.kwargs["pk"])
+        return queryset
