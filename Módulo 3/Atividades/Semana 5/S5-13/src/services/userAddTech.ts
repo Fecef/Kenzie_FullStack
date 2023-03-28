@@ -21,5 +21,3 @@ export async function userAddTech(
     return undefined;
   }
 }
-
-// criatividade, honestidade, engajamento, empatia, respeito
