@@ -1,13 +1,20 @@
 ## INSTALAÇÃO
 ```
-yarn dev
+yarn
 ```
 ## EXECUTAR MIGRAÇÕES
 ```
 npm run typeorm migration:run -- -d ./src/data-source
 ```
+## RODAR APLICAÇÂO
+```
+yarn dev
+```
+
 ## Base URL
+
 http://localhost:3001
+
 ## ROTAS SEM PROTEÇÃO
 
 ### POST - /user
@@ -121,13 +128,17 @@ Response:
 	"createdAt": "2023-03-27T21:25:47.193Z"
 }
 ```
+
 ### PATCH - /user
 
 Atualiza os dados do usuário logado.
 
 ### OPTIONALS FIELDS
+
 ```js
-{"name", "email", "password", "phone"}
+{
+  "name", "email", "password", "phone";
+}
 ```
 
 Request:
@@ -151,10 +162,10 @@ Response:
 	"createdAt": "2023-03-28T01:14:51.791Z"
 }
 ```
+
 ### DELETE - /user
 
 Altera o campo de **isActive** do usuário logado, para **false**.
-
 
 Request:
 
@@ -165,7 +176,9 @@ Response:
 NO RESPONSE
 
 ---
+
 ## ROTAS PROTEGIDAS - Contatos
+
 ### POST - /user/contact
 
 Adiciona um contato na lista de contatos do usuário logado.
@@ -204,28 +217,28 @@ Response:
 
 ```js
 [
-	{
-		"id": "5b3d8476-5200-41bb-a23d-5becb12a19b9",
-		"name": "Contato1",
-		"email": "contato1@gmail.com",
-		"phone": "1194454517",
-		"createdAt": "2023-03-28T00:09:16.535Z"
-	},
-	{
-		"id": "5b3d8476-5200-41bb-a23d-5becb12a19b9",
-		"name": "Contato2",
-		"email": "contato2@gmail.com",
-		"phone": "1194454517",
-		"createdAt": "2023-03-28T00:09:16.535Z"
-	},
-	{
-		"id": "5b3d8476-5200-41bb-a23d-5becb12a19b9",
-		"name": "Contato3",
-		"email": "contato3@gmail.com",
-		"phone": "1194454517",
-		"createdAt": "2023-03-28T00:09:16.535Z"
-	}
-]
+  {
+    id: "5b3d8476-5200-41bb-a23d-5becb12a19b9",
+    name: "Contato1",
+    email: "contato1@gmail.com",
+    phone: "1194454517",
+    createdAt: "2023-03-28T00:09:16.535Z",
+  },
+  {
+    id: "5b3d8476-5200-41bb-a23d-5becb12a19b9",
+    name: "Contato2",
+    email: "contato2@gmail.com",
+    phone: "1194454517",
+    createdAt: "2023-03-28T00:09:16.535Z",
+  },
+  {
+    id: "5b3d8476-5200-41bb-a23d-5becb12a19b9",
+    name: "Contato3",
+    email: "contato3@gmail.com",
+    phone: "1194454517",
+    createdAt: "2023-03-28T00:09:16.535Z",
+  },
+];
 ```
 
 ### GET - /user/contact/:contactId
@@ -254,8 +267,11 @@ Response:
 Atualiza os dados de um contato do usuário logado.
 
 ### OPTIONALS FIELDS
+
 ```js
-{"name", "email", "phone"}
+{
+  "name", "email", "phone";
+}
 ```
 
 Request:
