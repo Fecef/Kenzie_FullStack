@@ -1,4 +1,13 @@
-### Base URL: http://localhost:3001
+## INSTALAÇÃO
+```
+yarn dev
+```
+## EXECUTAR MIGRAÇÕES
+```
+npm run typeorm migration:run -- -d ./src/data-source
+```
+## Base URL
+http://localhost:3001
 ## ROTAS SEM PROTEÇÃO
 
 ### POST - /user
