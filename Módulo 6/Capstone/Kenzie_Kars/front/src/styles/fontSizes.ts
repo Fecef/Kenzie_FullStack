@@ -1,0 +1,15 @@
+export enum FontSizes {
+  heading1 = "2.75rem",
+  heading2 = "2.25rem",
+  heading3 = "2rem",
+  heading4 = "1.75rem",
+  heading5 = "1.5rem",
+  heading6 = "1.5rem",
+  heading7 = "1rem",
+  body1 = "1.25rem",
+  body2 = "0.875rem",
+  buttonBigText = "1rem",
+  buttonMediumText = "0.875rem",
+  inputPlaceholder = "1rem",
+  inputLabel = "0.875rem",
+}

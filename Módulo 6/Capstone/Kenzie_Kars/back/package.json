@@ -1,0 +1,57 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "Car's advertisement e-commerce.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
+    "seed": "ts-node-dev ./src/database/seed.ts",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenzie-Kars/Kenzie_Kars.git"
+  },
+  "keywords": [
+    "cars",
+    "e-commerce",
+    "advertisement"
+  ],
+  "author": "Kenzie Grupo 22",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kenzie-Kars/Kenzie_Kars/issues"
+  },
+  "homepage": "https://github.com/Kenzie-Kars/Kenzie_Kars#readme",
+  "dependencies": {
+    "@prisma/client": "^4.13.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.0",
+    "mailgen": "^2.0.27",
+    "nodemailer": "^6.9.1",
+    "pg": "^8.10.0",
+    "reflect-metadata": "^0.1.13",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/node": "^18.15.11",
+    "@types/nodemailer": "^6.4.7",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.7",
+    "prisma": "^4.12.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.3"
+  }
+}

@@ -1,0 +1,92 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String         @id @default(uuid())
+  name          String         @db.VarChar(50)
+  email         String         @unique @db.VarChar(50)
+  cpf           String         @unique @db.VarChar(20)
+  phone         String         @db.VarChar(20)
+  birthdate     DateTime       @db.Date()
+  description   String?        @db.Text
+  password      String         @db.VarChar(100)
+  accountType   String         @db.VarChar(50)
+  avatar        String?        @db.VarChar(100)
+  resetToken    String?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt 
+  address       Address?      
+  announcements Announcement[]
+  comments      Comment[]
+
+  @@map("users")
+}
+
+model Address {
+  id         String  @id @default(uuid())
+  street     String  @db.VarChar(50)
+  number     String  @db.VarChar(10)
+  complement String? @db.VarChar(50)
+  city       String  @db.VarChar(50)
+  state      String  @db.VarChar(50)
+  zipCode    String  @db.VarChar(10)
+  userId     String  @unique
+  user       User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("addresses")
+}
+
+model Announcement {
+  id          String    @id @default(uuid())
+  brand       String    @db.VarChar(50)
+  model       String    @db.VarChar(50)
+  year        Int
+  mileage     Int
+  price       Decimal   @db.Decimal()
+  priceFipe   Decimal   @db.Decimal()
+  fuelType    String    @db.VarChar(50)
+  color       String    @db.VarChar(50)
+  banner      String    @db.VarChar(255)
+  description String    @db.Text
+  isActive    Boolean   @default(true)
+  isGoodBuy   Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  images      Image[]
+  comments    Comment[]
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("announcements")
+}
+
+model Image {
+  id             String       @id @default(uuid())
+  imgUrl         String       @db.VarChar(255)
+  announcementId String
+  announcement   Announcement @relation(fields: [announcementId], references: [id], onDelete: Cascade)
+
+  @@map("images")
+}
+
+model Comment {
+  id             String       @id @default(uuid())
+  comment        String       @db.Text
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  announcementId String
+  announcement   Announcement @relation(fields: [announcementId], references: [id], onDelete: Cascade)
+  userId         String
+  user           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("comments")
+}
