@@ -49,7 +49,7 @@ Todas as atividades realizadas na Kenzie Academy.
 - Migrations
 - Metodologias Ágeis
 
-<h2>Módulo 6 ❌</h2>
+<h2>Módulo 6 ✔️</h2>
 
 - Trilha de Empregaade
 
